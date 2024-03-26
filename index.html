@@ -125,38 +125,66 @@
         //var u = averageScore + '%'
        // document.getElementById("fseven").value = u
         
-       function aver(){
-    var c = Number(document.getElementById("fone").value)
-    var d = Number(document.getElementById("ftwo").value)
-    var e = Number(document.getElementById("fthree").value)
-    var f = Number(document.getElementById("ffour").value)
-    var g = Number(document.getElementById("ffive").value)
+//        function aver(){
+//     var c = Number(document.getElementById("fone").value)
+//     var d = Number(document.getElementById("ftwo").value)
+//     var e = Number(document.getElementById("fthree").value)
+//     var f = Number(document.getElementById("ffour").value)
+//     var g = Number(document.getElementById("ffive").value)
+//     var totalScore = c + d + e + f + g;
+//     var averageScore = totalScore / 5;
+//     var u = averageScore + '%';
+//     document.getElementById("fseven").value = u;
+    
+    
+//         var student = document.getElementById("join").value
+//         var less  =  student +  " Your average score is lower than 45. You failed. You got a f " 
+//         var between  =  student + " Your average score is between 45 - 50. You Passed but need to improve. You got a D " 
+//         var good  =   student + " Your average score is between 51 - 65. You have a good result try harder next term. You got a C "
+//         var very = student +  " Your average score is between 65 - 80. You have a verygood result try harder next term. You got a B "
+//         var nice = student +  " Your average score is between 80 - 100. You have an Excellent result try harder next term. You got an A "
+
+
+//     if ( averageScore < 45) {
+//         document.getElementById("sorry").innerHTML = less ;
+//     } else if (averageScore > 45 && averageScore <= 50) {
+//         document.getElementById("sorry").innerHTML = between ;
+//     } else if (averageScore > 50 && averageScore <= 65) {
+//         document.getElementById("sorry").innerHTML = good
+//     } else if (averageScore > 65 && averageScore <=79 ) {
+//         document.getElementById("sorry").innerHTML = very
+//     } else if (averageScore > 80 && averageScore <= 100 ) {
+//         document.getElementById("sorry").innerHTML = nice
+//     }
+//  }  
+function aver() {
+    var c = Number(document.getElementById("fone").value);
+    var d = Number(document.getElementById("ftwo").value);
+    var e = Number(document.getElementById("fthree").value);
+    var f = Number(document.getElementById("ffour").value);
+    var g = Number(document.getElementById("ffive").value);
     var totalScore = c + d + e + f + g;
     var averageScore = totalScore / 5;
     var u = averageScore + '%';
     document.getElementById("fseven").value = u;
-    
-    
-        var student = document.getElementById("join").value
-        var less  =  student +  " Your average score is lower than 45. You failed. You got a f " 
-        var between  =  student + " Your average score is between 45 - 50. You Passed but need to improve. You got a D " 
-        var good  =   student + " Your average score is between 51 - 65. You have a good result try harder next term. You got a C "
-        var very = student +  " Your average score is between 65 - 80. You have a verygood result try harder next term. You got a B "
-        var nice = student +  " Your average score is between 65 - 80. You have an Excellent result try harder next term. You got an A "
 
+    var student = document.getElementById("join").value;
+    var message = '';
 
-    if ( averageScore < 45) {
-        document.getElementById("sorry").innerHTML = less ;
-    } else if (averageScore > 45 && averageScore <= 50) {
-        document.getElementById("sorry").innerHTML = between ;
-    } else if (averageScore > 50 && averageScore <= 65) {
-        document.getElementById("sorry").innerHTML = good
-    } else if (averageScore > 65 && averageScore <=79 ) {
-        document.getElementById("sorry").innerHTML = very
-    } else if (averageScore > 80 && averageScore <= 100 ) {
-        document.getElementById("sorry").innerHTML = nice
+    if (averageScore < 45) {
+        message = student + " Your average score is lower than 45. You failed. You got an F.";
+    } else if (averageScore <= 50) {
+        message = student + " Your average score is between 45 - 50. You Passed but need to improve. You got a D.";
+    } else if (averageScore <= 65) {
+        message = student + " Your average score is between 51 - 65. You have a good result try harder next term. You got a C.";
+    } else if (averageScore <= 79) {
+        message = student + " Your average score is between 66 - 79. You have a very good result try harder next term. You got a B.";
+    } else {
+        message = student + " Your average score is between 80 - 100. You have an Excellent result try harder next term. You got an A.";
     }
- }  
+
+    document.getElementById("sorry").innerHTML = message;
+}
 
     
 
@@ -172,3 +200,4 @@
     </script>
 </body>
 </html>
+
