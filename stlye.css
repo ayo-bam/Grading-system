@@ -1,0 +1,94 @@
+#good{
+    border: 1px solid black;
+    width: 950px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: silver;
+}
+.you{
+    border: 1px solid black;
+    width: 180px;
+    height: 300px;
+    
+  
+}
+.to{
+  border: 1px solid black;
+  height: 300px;
+  width: 200px;
+}
+.your{
+    border: 1px solid black;
+    width: 180px;
+    height: 300px;
+    
+  
+}
+.too{
+  border: 1px solid black;
+  height: 300px;
+  width: 180px;
+}
+.or{
+    border: 2px solid blue;
+    height: 100px;
+    width: 1000px;
+    display: flex;
+}
+.how{
+    border: 1px solid black;
+    height: 100px;
+    width: 200px;
+   
+}
+.row{
+    border: 1px solid blue;
+    height: 100px;
+    width: 180px;
+   
+}
+.total{
+  border: 1px solid black;
+  height: 300px;
+  width: 200px;
+
+}
+.now{
+    border: 1px solid blue;
+    height: 100px;
+    width: 180px;
+}
+.boy{
+    border: 1px solid blue;
+    height: 100px;
+    width: 180px;
+}
+#sorry{
+    margin: auto;
+    /* margin-right: 800px; */
+    font-size: 24px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  
+    body {
+        font-size: 14px; 
+    }
+
+   
+    .how {
+        font-size: 12px;
+    }
+
+    .now h2 {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    
+}
+

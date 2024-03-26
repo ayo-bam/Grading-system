@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+    <section id="good">
+        <div class="or">
+            <div class="how" style="font-size:15px;">
+                <h1 > Student Full Name</h1>
+                <input type="text" id="join">
+            </div> 
+            <div class="now">
+                <h2 style="text-align: center; margin-top: 40px; ">FRIST CA</h2>
+            </div>
+            <div class="row">
+                <h3 style="text-align: center; margin-top: 40px; font-size: xx-large;">Test</h3>
+            </div>
+            <div class="boy">
+                <h4 style="text-align: center; margin-top: 40px; font-size: xx-large;">Exam</h4>
+            </div>
+            <h5 style="text-align: center; margin-top: 40px; font-size: xx-large;">Total score</h5>
+        </div>
+       
+       
+        <div class="to">
+           <h2 style="text-align: center; margin-top: 40px; font-size: x-large;">English</h2>
+           <h2 style="text-align: center; margin-top: 10px; font-size: x-large;">Mathematics</h2>
+           <h2 style="text-align: center; margin-top: 20px; font-size: x-large;">Physics</h2>
+           <h2 style="text-align: center; margin-top: 20px; font-size: x-large;">Chemistry</h2>
+           <h2 style="text-align: center; margin-top: 20px; font-size: x-large;">civic Education</h2>
+        </div>
+     <div class="you">
+     <input type="text"style="text-align: center; margin-top: 40px;" id="cone">
+     <input type="text"style="text-align: center; margin-top: 30px;" id="ctwo">
+     <input type="text"style="text-align: center; margin-top: 25px;" id="cthree">
+     <input type="text"style="text-align: center; margin-top: 30px;" id="cfour">
+     <input type="text"style="text-align: center; margin-top: 20px;" id="cfive">
+     </div>
+     <div class="too">
+        <input type="text"style="text-align: center; margin-top: 40px;" id="done">
+        <input type="text"style="text-align: center; margin-top: 30px;" id="dtwo">
+        <input type="text"style="text-align: center; margin-top: 25px;" id="dthree">
+        <input type="text"style="text-align: center; margin-top: 30px;" id="dfour">
+        <input type="text"style="text-align: center; margin-top: 20px;" id="dfive">
+       
+     </div>
+     <div class="your">
+        <input type="text"style="text-align: center; margin-top: 40px;" id="eone">
+        <input type="text"style="text-align: center; margin-top: 30px;" id="etwo">
+        <input type="text"style="text-align: center; margin-top: 25px;" id="ethree">
+        <input type="text"style="text-align: center; margin-top: 30px;" id="efour">
+        <input type="text"style="text-align: center; margin-top: 20px;" id="efive">
+       
+     </div> 
+     <div class="total">
+        <input type="button" value="total"style="text-align: center; margin-top: 40px; width: 200px;" id="fone" onclick="you()"><br>
+        <input type="button" value="total"style="text-align: center; margin-top: 30px; width: 200px;" id="ftwo" onclick="your()"><br>
+        <input type="button" value="total"style="text-align: center; margin-top: 25px; width: 200px;" id="fthree" onclick="now()"><br>
+        <input type="button" value="total"style="text-align: center; margin-top: 30px; width: 200px;" id="ffour" onclick="know()"> <br>
+        <input type="button" value="total"style="text-align: center; margin-top: 20px; width: 200px;" id="ffive" onclick="cook()"><br> 
+        <input type="button" value="total"style="text-align: center; margin-top: 20px; width: 200px;" id="fsix" onclick="good()"> <br> <br> 
+        <input type="button" value="Average"style="text-align: center; margin-top: 20px; width: 200px;" id="fseven" onclick="aver()">
+    </div>
+    <p id="sorry"></p>
+       
+
+
+    </section>
+    <script>
+     function you(){
+        var cone = Number(document.getElementById("cone").value)
+        var done = Number(document.getElementById("done").value)
+        var eone = Number(document.getElementById("eone").value)
+        var go = cone + done + eone
+        document.getElementById("fone").value = go
+    }
+    function your(){
+        var ctwo = Number(document.getElementById("ctwo").value)
+        var dtwo = Number(document.getElementById("dtwo").value)
+        var etwo = Number(document.getElementById("etwo").value)
+        var goy = ctwo + dtwo + etwo
+        document.getElementById("ftwo").value = goy
+    }
+    function now(){
+        var cthree = Number(document.getElementById("cthree").value)
+        var dthree = Number(document.getElementById("dthree").value)
+        var ethree = Number(document.getElementById("ethree").value)
+        var goon = cthree + dthree + ethree
+        document.getElementById("fthree").value = goon
+    }
+    function know(){
+        var cfour = Number(document.getElementById("cfour").value)
+        var dfour = Number(document.getElementById("dfour").value)
+        var efour = Number(document.getElementById("efour").value)
+        var gor = cfour + dfour + efour
+        document.getElementById("ffour").value = gor
+    }
+    function cook(){
+        var cfive = Number(document.getElementById("cfive").value)
+        var dfive = Number(document.getElementById("dfive").value)
+        var efive = Number(document.getElementById("efive").value)
+        var gon = cfive + dfive + efive
+        document.getElementById("ffive").value = gon
+    }
+    function good(){
+        var c = Number(document.getElementById("fone").value)
+        var d = Number(document.getElementById("ftwo").value)
+        var e = Number(document.getElementById("fthree").value)
+        var f = Number(document.getElementById("ffour").value)
+        var g = Number(document.getElementById("ffive").value)
+        var goo = c + d + e + f + g
+        document.getElementById("fsix").value = goo
+    }
+    //function aver(){
+       // var c = Number(document.getElementById("fone").value)
+       // var d = Number(document.getElementById("ftwo").value)
+       // var e = Number(document.getElementById("fthree").value)
+       // var f = Number(document.getElementById("ffour").value)
+        //var g = Number(document.getElementById("ffive").value)
+       // var goo = (c + d + e + f + g) / 5
+        //var u = averageScore + '%'
+       // document.getElementById("fseven").value = u
+        
+       function aver(){
+    var c = Number(document.getElementById("fone").value)
+    var d = Number(document.getElementById("ftwo").value)
+    var e = Number(document.getElementById("fthree").value)
+    var f = Number(document.getElementById("ffour").value)
+    var g = Number(document.getElementById("ffive").value)
+    var totalScore = c + d + e + f + g;
+    var averageScore = totalScore / 5;
+    var u = averageScore + '%';
+    document.getElementById("fseven").value = u;
+    
+    
+        var student = document.getElementById("join").value
+        var less  =  student +  " Your average score is lower than 45. You failed. You got a f " 
+        var between  =  student + " Your average score is between 45 - 50. You Passed but need to improve. You got a D " 
+        var good  =   student + " Your average score is between 51 - 65. You have a good result try harder next term. You got a C "
+        var very = student +  " Your average score is between 65 - 80. You have a verygood result try harder next term. You got a B "
+        var nice = student +  " Your average score is between 65 - 80. You have an Excellent result try harder next term. You got an A "
+
+
+    if ( averageScore < 45) {
+        document.getElementById("sorry").innerHTML = less ;
+    } else if (averageScore > 45 && averageScore <= 50) {
+        document.getElementById("sorry").innerHTML = between ;
+    } else if (averageScore > 50 && averageScore <= 65) {
+        document.getElementById("sorry").innerHTML = good
+    } else if (averageScore > 65 && averageScore <=79 ) {
+        document.getElementById("sorry").innerHTML = very
+    } else if (averageScore > 80 && averageScore <= 100 ) {
+        document.getElementById("sorry").innerHTML = nice
+    }
+ }  
+
+    
+
+
+
+    
+
+     
+
+            
+       
+       
+    </script>
+</body>
+</html>
